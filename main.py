@@ -4,9 +4,9 @@ import os
 import requests
 from digitalocean import Domain, Record
 
-API_TOKEN = os.environ('DIGITALO_API_KEY', '')
-DOMAIN_NAME = os.environ('DIGITALO_DOMAIN_NAME', '')
-DOMAIN_RECORD_ID = os.environ('DIGITALO_DOMAIN_RECORD_ID', '')
+API_TOKEN = os.environ.get('DIGITALO_API_KEY', '')
+DOMAIN_NAME = os.environ.get('DIGITALO_DOMAIN_NAME', '')
+DOMAIN_RECORD_ID = os.environ.get('DIGITALO_DOMAIN_RECORD_ID', '')
 
 
 def main():
